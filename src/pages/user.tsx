@@ -1,31 +1,3 @@
-// import { useParams } from "react-router-dom"
-// import { useEffect, useState } from "react"
-// import { IUser } from "../helpers/types"
-// import { getUserById } from "../helpers/api"
-
-// export const User = () => {
-//     const {id} = useParams()
-//     const [user, setUser] = useState<IUser>()
-//     useEffect(() => {
-//         getUserById(Number(id))
-//         .then((data) => {
-//             setUser(data)
-//         })
-//     }, [])
-//     return <>
-//         <h1>User</h1>
-//         {
-//             user && <div>
-//                 <p>{user.name}</p>
-//                 <p>{user.surname}</p>
-//                 <p>{user.age}</p>
-//                 <p>{user.salary} USD</p>
-//             </div>
-//         }
-//     </>
-// }
-
-
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IUser } from "../helpers/types";

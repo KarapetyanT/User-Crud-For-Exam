@@ -1,36 +1,3 @@
-// import { getAllUsers } from "../helpers/api"
-// import { useEffect, useState } from "react"
-// import { IUser } from "../helpers/types"
-// import { Link } from "react-router-dom"
-
-// export const UserList = () => { 
-//     const [users, setUsers] = useState<IUser[]>([])
-//     useEffect(() => {
-//         getAllUsers()
-//         .then((data) => {
-//             setUsers(data)
-//         })
-//     }, [])
-
-//     return <>
-//         <h1>UserList</h1>
-//         {
-//             users.map((user) =>{
-//                 return <div key={user.id}>
-//                     <p>{user.name}</p>
-//                     <p>{user.surname}</p>
-//                     <p>{user.age}</p>
-//                     <p>{user.salary} USD</p>
-//                     <Link to={"/add"}>Add New User</Link>
-//                     <Link to={"/user/" + user.id}>Details</Link>
-//                 </div>
-//             })
-//         }
-//     </>
-// }
-
-
-
 import { getAllUsers } from "../helpers/api";
 import { useEffect, useState } from "react";
 import { IUser } from "../helpers/types";

@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { InputUser } from "../helpers/types";
 import { AddNewUser } from "../helpers/api";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ export const AddUser = () => {
     reset,
   } = useForm<InputUser>();
 
-  const handleAdd = (data: InputUser) => {
+  const handleAdd: SubmitHandler<InputUser> = (data: InputUser) => {
     AddNewUser(data).then(() => {
       navigate ("/");
       reset();
